@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall4"
+    tools:context=".GameOverActivity">
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="212dp"
+        android:layout_height="101dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="194dp"
+        android:background="@drawable/red_button_skin"
+        android:padding="10dp"
+        android:text="SAVE"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="329dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtUser"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="51dp"
+        android:text="Name : "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/gameOver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="121dp"
+        android:text="Game Over!"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="70dp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="212dp"
+        android:layout_height="101dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/red_button_skin"
+        android:padding="10dp"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/score2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="303dp"
+        android:text="SCORE : "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/closeBtn"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#9f000000"
+        android:text="x"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>

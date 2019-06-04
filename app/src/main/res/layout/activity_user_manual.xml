@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall4">
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="158dp"
+        android:layout_height="89dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="143dp"
+        android:background="@drawable/red_button_skin"
+        android:fontFamily="sans-serif-condensed"
+        android:text="OK"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/closeButton3"
+        style="@android:style/Widget.Material.Light.ImageButton"
+        android:layout_width="54dp"
+        android:layout_height="49dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#36000000"
+        android:onClick="setContentView"
+        android:tint="@android:color/white"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="User Manual"
+        android:textColor="@android:color/background_light"
+        android:textSize="60dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="54dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="273dp"
+        app:srcCompat="@drawable/black" />
+
+    <TextView
+        android:id="@+id/tvblack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="monospace"
+        android:text="Decrease A Life"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/rainbow"
+        android:layout_width="54dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginBottom="329dp"
+        app:srcCompat="@drawable/rainbow" />
+
+    <TextView
+        android:id="@+id/tvscore"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="338dp"
+        android:layout_marginStart="48dp"
+        android:text="20 Points"
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        tools:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/red"
+        android:layout_width="52dp"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginBottom="244dp"
+        app:srcCompat="@drawable/red" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvscore"
+        android:layout_alignTop="@+id/red"
+        android:text="10 Points"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        tools:textColor="@android:color/black" />
+
+
+</RelativeLayout>

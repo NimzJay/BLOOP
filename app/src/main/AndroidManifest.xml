@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.bloop">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BloopActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GameOverActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LevelUp2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".level1Up"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".level2Up"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".level3Up"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LevelUp3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LevelUp4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".userManual"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

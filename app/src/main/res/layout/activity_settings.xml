@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall4">
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:text="Settings"
+        android:textColor="@android:color/background_light"
+        android:textSize="@android:dimen/app_icon_size"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/noti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/vol"
+        android:layout_marginTop="304dp"
+        android:text="Notification"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/vol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Sound"
+        android:layout_marginBottom="343dp"
+        android:text="Volume"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="244dp"
+        android:text="Sound"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        style="@android:style/Widget.Material.Light.ImageButton"
+        android:layout_width="54dp"
+        android:layout_height="49dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#36000000"
+        android:onClick="setContentView"
+        android:tint="@android:color/white"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vol"
+        android:layout_toEndOf="@+id/noti"
+        android:background="#6d000000" />
+
+    <Switch
+        android:id="@+id/switch6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/noti"
+        android:layout_toEndOf="@+id/settings" />
+
+    <Switch
+        android:id="@+id/switch7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Sound"
+        android:layout_toEndOf="@+id/settings" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="169dp"
+        android:layout_height="97dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="164dp"
+        android:background="@drawable/red_button_skin"
+        android:fontFamily="sans-serif-condensed"
+        android:text="SUBMIT"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+</RelativeLayout>
